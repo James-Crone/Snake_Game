@@ -4,7 +4,15 @@ import pygame
 
 pygame.init()  #Initilizes the game
 
-x_change,y_change,Y,X,CYAN,RED,WHITE,WIDTH,HEIGHT = 0,0,400,400,(0,255,255),(255,0,0),(255, 255, 255),800,800 #Declorations 
+x_change = 0
+y_change = 0
+Y = 400
+X = 400 
+CYAN = (0,255,255)
+RED = (255,0,0)
+WHITE = (255, 255, 255)
+WIDTH = 800
+HEIGHT = 800
 clock = pygame.time.Clock()
 
 pygame.display.set_caption("Snake Game :)") #sets the title 
@@ -32,8 +40,5 @@ while not Game_Over:#stops window from closing untill (X) is clicked
                 y_change = 0
             X += x_change
             Y += y_change
-        pygame.draw.rect(WINDOW, RED, [X,Y,10,10])#displays the snakew
-        clock.tick(30)
+        pygame.draw.rect(WINDOW, RED, [X,Y,10,10])#displays the snake
         pygame.display.update()
-
-
