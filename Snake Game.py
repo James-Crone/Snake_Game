@@ -58,7 +58,6 @@ def Game():
             if event.type == pygame.QUIT:
                 Game_Over = True
             
-            # moves the snake
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_w:
                     y_change = -10
